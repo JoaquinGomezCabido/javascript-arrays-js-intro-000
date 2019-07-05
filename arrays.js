@@ -5,9 +5,7 @@ var addElementToBeginningOfArray = (a, b) => {
 }
 
 var destructivelyAddElementToBeginningOfArray = (a,b) => {
-  var a = [b, ...a]
-
-  return a
+  return a.unshift(b)
 }
 
 var addElementToEndOfArray = (a, b) => {
@@ -15,7 +13,7 @@ var addElementToEndOfArray = (a, b) => {
 }
 
 var destructivelyAddElementToEndOfArray = (a,b) => {
-  return a = [...a, b]
+  return a.push(b)
 }
 
 var accessElementInArray = (a, i) => {
