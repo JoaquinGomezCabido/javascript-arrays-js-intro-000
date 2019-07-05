@@ -5,7 +5,9 @@ var addElementToBeginningOfArray = (a, b) => {
 }
 
 var destructivelyAddElementToBeginningOfArray = (a,b) => {
-  return a.unshift(b)
+  a.unshift(b)
+  
+  return a
 }
 
 var addElementToEndOfArray = (a, b) => {
